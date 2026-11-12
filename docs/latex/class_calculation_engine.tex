@@ -1,0 +1,111 @@
+\doxysection{Calculation\+Engine Class Reference}
+\label{class_calculation_engine}\index{CalculationEngine@{CalculationEngine}}
+
+
+Performs mathematical calculations and logs their results.  
+
+
+
+
+{\ttfamily \+\#include $<$Calculation\+Engine.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_calculation_engine_a5dd2e4127b884643239e4802900dd529}{Calculation\+Engine}} (const \doxymbox{\hyperlink{class_logger}{Logger}} \&logger)
+\begin{DoxyCompactList}\small\item\em Creates a calculation engine. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_calculation_engine_a19d4dd01a764735328b503a531be8ce0}{power}} (double base, int exponent) const
+\begin{DoxyCompactList}\small\item\em Calculates base raised to exponent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \doxymbox{\hyperlink{class_logger}{Logger}} \& \doxymbox{\hyperlink{class_calculation_engine_a0c2c89808b330aa913c9335f9f295ca8}{logger\_}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_logger}{Logger} used by this calculation engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Performs mathematical calculations and logs their results. 
+
+The \doxylink{class_calculation_engine}{Calculation\+Engine} uses a \doxylink{class_logger}{Logger} object to report when a calculation starts and to display its result. This example provides a power operation. 
+
+\label{class_calculation_engine_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{CalculationEngine@{CalculationEngine}!CalculationEngine@{CalculationEngine}}
+\index{CalculationEngine@{CalculationEngine}!CalculationEngine@{CalculationEngine}}
+\doxysubsubsection{\texorpdfstring{CalculationEngine()}{CalculationEngine()}}
+{\footnotesize\ttfamily \label{class_calculation_engine_a5dd2e4127b884643239e4802900dd529} 
+Calculation\+Engine::\+\+Calculation\+Engine (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_logger}{Logger}} \&}]{logger}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Creates a calculation engine. 
+
+Constructs a \doxylink{class_calculation_engine}{Calculation\+Engine}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em logger} & \doxylink{class_logger}{Logger} used to report calculation information.\\
+\hline
+{\em logger} & \doxylink{class_logger}{Logger} used to report operations. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_calculation_engine_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\index{CalculationEngine@{CalculationEngine}!power@{power}}
+\index{power@{power}!CalculationEngine@{CalculationEngine}}
+\doxysubsubsection{\texorpdfstring{power()}{power()}}
+{\footnotesize\ttfamily \label{class_calculation_engine_a19d4dd01a764735328b503a531be8ce0} 
+double Calculation\+Engine::\+power (\begin{DoxyParamCaption}\item[{double}]{base}{, }\item[{int}]{exponent}{}\end{DoxyParamCaption}) const}
+
+
+
+Calculates base raised to exponent. 
+
+Computes the power using repeated multiplication.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & The number being raised to a power. \\
+\hline
+{\em exponent} & The non-\/negative integer exponent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of base raised to exponent.
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\doxymbox{\hyperlink{todo__todo000001}{Todo}}]Add support for negative exponents and more operations. \end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & The number being raised. \\
+\hline
+{\em exponent} & A non-\/negative integer exponent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The computed power. 
+\end{DoxyReturn}
+
+
+\label{class_calculation_engine_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\index{CalculationEngine@{CalculationEngine}!logger\_@{logger\_}}
+\index{logger\_@{logger\_}!CalculationEngine@{CalculationEngine}}
+\doxysubsubsection{\texorpdfstring{logger\_}{logger\_}}
+{\footnotesize\ttfamily \label{class_calculation_engine_a0c2c89808b330aa913c9335f9f295ca8} 
+const \doxymbox{\hyperlink{class_logger}{Logger}}\& Calculation\+Engine::\+logger\_\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxylink{class_logger}{Logger} used by this calculation engine. 
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_calculation_engine_8h}{Calculation\+Engine.\+h}}\item 
+\doxymbox{\hyperlink{_calculation_engine_8cpp}{Calculation\+Engine.\+cpp}}\end{DoxyCompactItemize}

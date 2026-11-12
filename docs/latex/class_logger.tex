@@ -1,0 +1,98 @@
+\doxysection{Logger Class Reference}
+\label{class_logger}\index{Logger@{Logger}}
+
+
+Prints messages with their corresponding log level.  
+
+
+
+
+{\ttfamily \+\#include $<$Logger.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_logger_a85cd7fdc18db8592a03627c3afc267ff}{Logger}} (std::\+ostream \&output=std::\+cout)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_logger}{Logger} object. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_logger_ab588e2088c93df300a0bab12e82f41e7}{log}} (\doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}} level, const std::\+string \&message) const
+\begin{DoxyCompactList}\small\item\em Writes a message with a level label. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::\+ostream \& \doxymbox{\hyperlink{class_logger_a6de7bcc5491899d21d966b7cfe568024}{output\_}}
+\begin{DoxyCompactList}\small\item\em Stream used to print log messages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Prints messages with their corresponding log level. 
+
+\doxylink{class_logger}{Logger} provides a small, reusable way to display messages. It is used by \doxylink{class_calculation_engine}{Calculation\+Engine} to report calculations. 
+
+\label{class_logger_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{Logger@{Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{Logger()}{Logger()}}
+{\footnotesize\ttfamily \label{class_logger_a85cd7fdc18db8592a03627c3afc267ff} 
+Logger::\+\+Logger (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{output}{ = {\ttfamily std::cout}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{class_logger}{Logger} object. 
+
+Constructs a \doxylink{class_logger}{Logger} using the supplied output stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & The output stream where messages will be written. Defaults to the standard output stream.\\
+\hline
+{\em output} & Stream where log messages will be written. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_logger_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\index{Logger@{Logger}!log@{log}}
+\index{log@{log}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{class_logger_ab588e2088c93df300a0bab12e82f41e7} 
+void Logger::\+log (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}}}]{level}{, }\item[{const std::\+string \&}]{message}{}\end{DoxyParamCaption}) const}
+
+
+
+Writes a message with a level label. 
+
+Prints a message preceded by its log level.
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The severity level of the message. \\
+\hline
+{\em message} & The message text to display.\\
+\hline
+{\em level} & Severity of the message. \\
+\hline
+{\em message} & Text to print. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_logger_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\index{Logger@{Logger}!output\_@{output\_}}
+\index{output\_@{output\_}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{output\_}{output\_}}
+{\footnotesize\ttfamily \label{class_logger_a6de7bcc5491899d21d966b7cfe568024} 
+std::\+ostream\& Logger::\+output\_\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stream used to print log messages. 
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_logger_8h}{Logger.\+h}}\item 
+\doxymbox{\hyperlink{_logger_8cpp}{Logger.\+cpp}}\end{DoxyCompactItemize}
